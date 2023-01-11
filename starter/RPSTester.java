@@ -1,3 +1,13 @@
+/*
+  Name: Qingyang Hu
+  Email: q3hu@ucsd.edu
+  PID: A16164360
+  Sources Used: Java Interface Documentation, PA1 Write-up
+
+  This file is for CSE 12 PA1 in Winter 2023,
+  and contains a tester for debugging and testing purposes.
+*/
+
 import org.junit.*;
 
 import static org.junit.Assert.*;
@@ -6,7 +16,7 @@ import java.io.*;
 import java.util.*;
 
 public class RPSTester {
-    public static final int CPU_WIN_OUTCOME = 2;git
+    public static final int CPU_WIN_OUTCOME = 2;
     public static final int PLAYER_WIN_OUTCOME = 1;
     public static final int TIE_OUTCOME = 0;
     public static final int INVALID_INPUT_OUTCOME = -1;

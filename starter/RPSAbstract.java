@@ -18,11 +18,11 @@ public abstract class RPSAbstract implements RPSInterface {
     protected String[] cpuMoves;
 
     // The default moves.  Use for the basic implementation of the game.
-    protected static final String[] DEFAULT_MOVES = {"scissors", "paper", "rock"};
-	
-	/* Important: Use the following constants to avoid output matching issues and 
-	   magic numbers!
-	 */
+    protected static final String[] DEFAULT_MOVES = {"scissors", "paper",
+            "rock"};
+
+    /* Important: Use the following constants to avoid output matching issues
+       and magic numbers! */
 
     // Messages for the game.
     protected static final String INVALID_INPUT =
