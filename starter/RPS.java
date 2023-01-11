@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class RPS extends RPSAbstract {
+    // Messages for the game.
+    protected static final String GAME_NOT_IMPLEMENTED =
+            "Game not yet implemented.";
+
     /**
      * Construct a new instance of RPS with the given possible moves.
      * @param moves all possible moves in the game.
@@ -32,7 +36,7 @@ public class RPS extends RPSAbstract {
         Scanner in = new Scanner(System.in);
 
         // While user does not input "q", play game
-        System.out.println("Game not yet implemented.");
+        System.out.println(GAME_NOT_IMPLEMENTED);
 
         // TODO: Insert the code to play the game. 
         // See the writeup for an example of the game play.
