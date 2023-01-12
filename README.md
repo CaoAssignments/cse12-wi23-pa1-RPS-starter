@@ -45,7 +45,11 @@ In this class, you may use any programming environment that you choose, but you 
 
 
 
-1. Download the starter code from [[here](https://github.com/CaoAssignments/cse12-wi23-pa1-RPS-starter)] and put it in a directory in your working environment.  You will have four files in the `starter` directory:
+1. Download the starter code this repository by clicking on "<> Code" -> "Download ZIP" and put it in a directory in your working environment. 
+
+   Alternatively, you can create a **private** repository by clicking on "Use this template", if you'd prefer to use Git to track your changes. Do NOT fork or create any **public** repositories as this enables everyone to view your code.
+
+   You will have four files in the `starter` directory:
     - `RPSInterface.java` - The interface for the Rock Paper Scissors game
     - `RPSAbstract.java` - An abstract class that implements some of the methods in RPSInterface
     - `RPS.java` - A concrete class that implements the rest of the RPSInterface
