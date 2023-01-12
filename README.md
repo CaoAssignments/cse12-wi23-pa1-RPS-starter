@@ -1,7 +1,7 @@
 
 
 
-# CSE 12 PA1: Getting comfortable in Java again
+# CSE 12 PA1: Getting Comfortable in Java Again
 
 **Due Date: Thursday, January 19, 2023, 11:59 pm PST**
 
@@ -34,7 +34,7 @@ Complete a short [pre-survey here](https://forms.gle/q3hkhinHXyRE4vSdA).  This w
 
 ## Part 2: Academic Integrity (5 points)
 
-Carefully read the integrity policy for this course, which is found in the Syllabus, and complete the [Integrity Pledge from the syllabus](https://forms.gle/AmQ46fzFL92xDpET8).  
+Carefully read the integrity policy for this course, which is found in the Syllabus, and complete the [Integrity Pledge](https://forms.gle/AmQ46fzFL92xDpET8) from the syllabus.  
 
 (Note that this is the same link from the Syllabus, so you might have already completed it.  If you have, you have already submitted this part of the assignment.)
 
