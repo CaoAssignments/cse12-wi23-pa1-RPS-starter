@@ -60,17 +60,17 @@ public class RPSTester {
     /* Tests for play */
     @Test
     public void testPlayPlayerWin() {
-        rpsGame.play("paper", "rock");
+        rpsGame.playRPS("paper", "rock");
         assertEquals(1, rpsGame.numPlayerWins);
         assertEquals("paper", rpsGame.playerMoves[0]);
         assertEquals("rock", rpsGame.cpuMoves[0]);
         assertEquals(1, rpsGame.numGames);
-        rpsGame.play("rock", "scissors");
+        rpsGame.playRPS("rock", "scissors");
         assertEquals(2, rpsGame.numPlayerWins);
         assertEquals("rock", rpsGame.playerMoves[1]);
         assertEquals("scissors", rpsGame.cpuMoves[1]);
         assertEquals(2, rpsGame.numGames);
-        rpsGame.play("scissors", "paper");
+        rpsGame.playRPS("scissors", "paper");
         assertEquals(3, rpsGame.numPlayerWins);
         assertEquals("scissors", rpsGame.playerMoves[2]);
         assertEquals("paper", rpsGame.cpuMoves[2]);
@@ -81,17 +81,17 @@ public class RPSTester {
 
     @Test
     public void testPlayCPUWin() {
-        rpsGame.play("rock", "paper");
+        rpsGame.playRPS("rock", "paper");
         assertEquals(1, rpsGame.numCPUWins);
         assertEquals("rock", rpsGame.playerMoves[0]);
         assertEquals("paper", rpsGame.cpuMoves[0]);
         assertEquals(1, rpsGame.numGames);
-        rpsGame.play("scissors", "rock");
+        rpsGame.playRPS("scissors", "rock");
         assertEquals(2, rpsGame.numCPUWins);
         assertEquals("scissors", rpsGame.playerMoves[1]);
         assertEquals("rock", rpsGame.cpuMoves[1]);
         assertEquals(2, rpsGame.numGames);
-        rpsGame.play("paper", "scissors");
+        rpsGame.playRPS("paper", "scissors");
         assertEquals(3, rpsGame.numCPUWins);
         assertEquals("paper", rpsGame.playerMoves[2]);
         assertEquals("scissors", rpsGame.cpuMoves[2]);
@@ -102,17 +102,17 @@ public class RPSTester {
 
     @Test
     public void testPlayTies() {
-        rpsGame.play("paper", "paper");
+        rpsGame.playRPS("paper", "paper");
         assertEquals(1, rpsGame.numTies);
         assertEquals("paper", rpsGame.playerMoves[0]);
         assertEquals("paper", rpsGame.cpuMoves[0]);
         assertEquals(1, rpsGame.numGames);
-        rpsGame.play("rock", "rock");
+        rpsGame.playRPS("rock", "rock");
         assertEquals(2, rpsGame.numTies);
         assertEquals("rock", rpsGame.playerMoves[1]);
         assertEquals("rock", rpsGame.cpuMoves[1]);
         assertEquals(2, rpsGame.numGames);
-        rpsGame.play("scissors", "scissors");
+        rpsGame.playRPS("scissors", "scissors");
         assertEquals(3, rpsGame.numTies);
         assertEquals("scissors", rpsGame.playerMoves[2]);
         assertEquals("scissors", rpsGame.cpuMoves[2]);
@@ -123,34 +123,34 @@ public class RPSTester {
 
     @Test
     public void testPlayPokemon() {
-        pokemonGame.play("water", "fire");
+        pokemonGame.playRPS("water", "fire");
         assertEquals(1, pokemonGame.numPlayerWins);
         assertEquals("water", pokemonGame.playerMoves[0]);
         assertEquals("fire", pokemonGame.cpuMoves[0]);
         assertEquals(1, pokemonGame.numGames);
-        pokemonGame.play("fire", "ice");
+        pokemonGame.playRPS("fire", "ice");
         assertEquals(2, pokemonGame.numPlayerWins);
         assertEquals("fire", pokemonGame.playerMoves[1]);
         assertEquals("ice", pokemonGame.cpuMoves[1]);
         assertEquals(2, pokemonGame.numGames);
 
-        pokemonGame.play("water", "electric");
+        pokemonGame.playRPS("water", "electric");
         assertEquals(1, pokemonGame.numCPUWins);
         assertEquals("water", pokemonGame.playerMoves[2]);
         assertEquals("electric", pokemonGame.cpuMoves[2]);
         assertEquals(3, pokemonGame.numGames);
-        pokemonGame.play("fire", "water");
+        pokemonGame.playRPS("fire", "water");
         assertEquals(2, pokemonGame.numCPUWins);
         assertEquals("fire", pokemonGame.playerMoves[3]);
         assertEquals("water", pokemonGame.cpuMoves[3]);
         assertEquals(4, pokemonGame.numGames);
 
-        pokemonGame.play("water", "ice");
+        pokemonGame.playRPS("water", "ice");
         assertEquals(1, pokemonGame.numTies);
         assertEquals("water", pokemonGame.playerMoves[4]);
         assertEquals("ice", pokemonGame.cpuMoves[4]);
         assertEquals(5, pokemonGame.numGames);
-        pokemonGame.play("fire", "ground");
+        pokemonGame.playRPS("fire", "ground");
         assertEquals(2, pokemonGame.numTies);
         assertEquals("fire", pokemonGame.playerMoves[5]);
         assertEquals("ground", pokemonGame.cpuMoves[5]);
@@ -203,7 +203,7 @@ public class RPSTester {
         PrintStream newps = new PrintStream(baos);
         ByteArrayInputStream bais = new ByteArrayInputStream(inputString.getBytes());
 
-        // Replace output and input streams for the test so we can feed input 
+        // Replace output and input streams for the test so we can feed input
         // and compare the output
         try {
             System.setIn(bais);
